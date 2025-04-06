@@ -1,0 +1,303 @@
+.footer {
+  background-color: #1e375a;
+  width: 100%;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  // padding: 2rem;
+}
+
+// Desktop styles
+.desktopView {
+  display: none;
+  padding: 6rem 0;
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.helpSection {
+  h2 {
+    color: white;
+    margin-bottom: 0.8rem;
+    font-weight: 500;
+    line-height: 31.2px;
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 15px;
+    color: #c0bfbf;
+    margin-bottom: 1.6rem;
+    font-weight: 400;
+    line-height: 21px;
+  }
+}
+
+.btnAnswer {
+  background-color: #0052cc;
+  color: white;
+  // padding: 1.2rem 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  line-height: 14.3px;
+  letter-spacing: 0.39px;
+  font-weight: 400;
+  height: 40px;
+  max-width: 200px;
+  margin-bottom: 40px;
+  &:hover {
+    background-color: #126cf3;
+  }
+}
+
+.footerColumn {
+  h3 {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 21px;
+    color: white;
+    margin-bottom: 2rem;
+  }
+
+  .linkGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    a {
+      margin-bottom: 2rem;
+      color: #90A2BD;
+      text-decoration: none;
+      font-size: 15px;
+      line-height: 21px;
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}
+
+// Mobile styles
+.mobileView {
+  padding: 40px 15px;
+  background-color: #12294A;
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.dropdownContainer {
+  margin-bottom: 0.5rem;
+}
+
+.dropdownButton {
+  width: 100%;
+  background-color: #1A3157;
+  color: white;
+  padding: 13px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin-bottom: 16px;
+  height: 47px;
+}
+
+.icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.dropdownContent {
+  background-color: #0d1f36;
+  margin-top: 0.25rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.dropdownLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  a {
+    color: #c0bfbf;
+    text-decoration: none;
+
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+.mobileHelpSection {
+  display: flex;
+  margin-top: 5rem;
+  margin-bottom: 1.6rem;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 18px 24px;
+  // h2 {
+  //   color: white;
+  //   margin-bottom: 1rem;
+  // }
+
+  p {
+    color: #c0bfbf;
+    font-size: 11px;
+    // margin-bottom: 1rem;
+  }
+
+  .btnAnswer {
+    width: 100%;
+  }
+}
+
+.mobileHelpSection .helpContent{
+  text-align: start;
+  padding-left: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+// App section styles
+.appSection {
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .mobileApps {
+    .androidBox,
+    .iosBox {
+      width: 100%;
+      height: auto;
+      flex-direction: row;
+      padding: 10px 15px;
+      gap: 10px;
+      
+      .mobileContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2px;
+        
+        h4 {
+          margin: 0;
+        }
+        
+        span {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+.macBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  width: 160px;
+  height: 54px;
+  span {
+    color: white;
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: 500;
+  }
+  img{
+    width: 42px;
+    height: 42px;
+  }
+}
+
+.mobileApps {
+  display: flex;
+  gap: 1rem;
+}
+
+.androidBox,
+.iosBox {
+  width: 76px;
+  height: 63px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 10px;
+
+  span {
+    color: #90A2BD;
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: 400;
+    text-align: center;
+  }
+  
+  img {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+  }
+  
+  .contentApp {
+    font-size: 12px;
+    margin: 0;
+    text-align: center;
+  }
+}
+
+.socialIcons {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+
+  img{
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.mobileSocialIcons{
+  max-width: 300px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2.4rem;
+
+  img{
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.mobileFollowSection{
+  text-align: center;
+  padding: 2rem 0px 3rem 0px;
+}
+
+.mobileHelpSection .btnAnswer{
+  max-width: 116px;
+  height: 34px;
+  margin: 1rem;
+}
